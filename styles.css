@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---End of CSS Reset---*/
+
+/*---GLOBAL STYLES---*/
+html {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 16px;
+	color: hsla(250, 0%, 25%, 1);
+	background-color: hsla(150, 100%, 100%, 1);
+}
+
+.page {
+	width: 95%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 5rem;
+	font-weight: 100;
+	line-height: 1.25em;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 100;
+	line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 2em;
+}
+
+p.big {
+	font-size: 1.25rem;
+	line-height: 2em;
+}
+
+i {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
+a {
+	color: hsla(250, 100%, 70%, 1);
+	text-decoration: none;
+}
+
+a:hover {
+	color: hsla(250, 100%, 50%, 1);
+	transition: color .5s ease;
+}
+
+p a::after {
+	content: "⭢";
+	margin-left: .5rem;
+}
+
+a.arrow::after {
+	content: "⭢";
+	margin-left: .5rem;
+}
+
+button {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: .75rem;
+	text-align: center;
+}
+
+.latin {
+	font-style: italic;
+	color: hsla(0, 0%, 0%, .5);
+}
+
+/*---ELEMENT STYLES---*/
+
+nav {
+	display: inline-flex;
+	width: 100%;
+	height: 4rem;
+	background-color: hsla(250, 100%, 100%, 1);
+
+	position: fixed;
+	top: 0;
+
+	z-index: 100;
+}
+
+nav .nav-element {
+	display: inline-flex;
+	height: 4rem;
+	padding: 0 1.5rem;
+	align-items: center;
+}
+
+nav .logo {
+	text-transform: lowercase;
+	color: hsla(250, 0%, 25%, 1);
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a.nav-element:hover {
+	background-color: hsla(150, 100%, 0%, .075);
+}
+
+nav .mushroom-name {
+	border-left: 1px solid hsla(150, 0%, 85%, 1);
+}
+
+footer {
+	display: inline-flex;
+	align-content: flex-start;
+	width: 100%;
+
+	background-color: hsla(250, 100%, 95%, .25);
+	margin-top: 6rem;
+	padding: 4rem 0;
+	color: hsla(250, 0%, 40%, 1);
+}
+
+footer .site-links {
+	margin: 0 1% 0 2.5%;
+	width: 15%;
+}
+
+footer .about {
+	margin: 0 1%;
+	width: 30%;
+}
+
+footer h4 {
+	padding: 0 0 1rem 0;
+	border-bottom: 1px solid hsla(150, 100%, 0%, .25)
+}
+
+footer .site-links li {
+	padding: 1rem 0;
+	border-bottom: 1px solid hsla(150, 100%, 0%, .25);
+	font-size: .875rem;
+}
+
+footer .about p {
+	margin-top: .5rem;
+	font-size: .875rem;
+}
+
+button {
+	background-color: hsla(150, 75%, 50%, 1);
+	border: none;
+	padding: 1em;
+	color: white;
+	cursor: pointer;
+	border-radius: .125rem;
+}
+
+button:hover {
+	background-color: hsla(150, 75%, 40%, 1);
+	transition: 1s ease;
+}
+
+.masthead {
+	position: relative;
+	width: 100%;
+	min-height: 30rem;
+	height: 60vh;
+	margin: 4rem 0 3rem; /*NAV OFFSET */
+
+	/* background-color: hsla(150, 100%, 95%, 1); */
+	display: inline-flex;
+	align-items: center;
+
+	overflow: hidden;
+	z-index: -1;
+}
+
+.masthead .content {
+ 	max-width: 40rem;
+	border: 1px solid hsla(150, 0%, 100%, 1);
+	margin-left: 5%;
+}
+
+.masthead h1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 3em;
+	text-transform: uppercase;
+	border-bottom: 1px solid hsla(150, 0%, 100%, 1);
+	padding: 2rem 3rem;
+	color: white;
+
+	letter-spacing: 1.5em;
+}
+
+.masthead p {
+	font-size: .875rem;
+	padding: 1rem 2rem;
+	background-color: white;
+}
+
+.masthead video {
+	position: absolute;
+	left: 2.5%;
+	width: 95%;
+	min-height: 60vh;
+	border-radius: .125rem;
+	opacity: 0.85;
+	z-index: -1;
+}
+
+.callout {
+	position: relative;
+	text-align: center;
+	padding: 1.25rem 0;
+
+	line-height: 2em;
+	border-radius: .25rem;
+
+	margin-bottom: 2rem;
+
+	color: hsla(30, 100%, 60%, .75);
+	border: 1px solid hsla(30, 100%, 60%, .5);
+}
+
+.callout p {
+	display: inline-block;
+	width: 90%;
+	font-size: .875rem;
+}
+
+.entries {
+	display: inline-flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	background-color: white;
+	padding: 2rem;
+}
+
+.entry-tile {
+	position: relative;
+	width: 24%;
+	margin: .5%;
+	transition: transform .5s ease;
+	margin-bottom: 1rem;
+}
+
+.entry-tile button {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+
+	background-color: hsla(360, 100%, 100%, .5);
+	color: hsla(250, 0%, 25%, 1);
+
+	opacity: 0;
+}
+
+.entry-tile h3 {
+	display: inline-block;
+	width: 100%;
+	padding-bottom:.25rem;
+	border-bottom: 1px solid hsla(360, 100%, 0%, 0.125);
+	color: hsla(250, 0%, 25%, 1)
+}
+
+.entry-tile h3::after {
+	content: "⭢";
+	margin-left: 0rem;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.entry-tile .latin {
+	display: inline-block;
+	padding: .5rem 0 1.5rem;
+	font-size: .75rem;
+	color: hsla(150, 100%, 35%, 1);
+}
+
+.entry-tile img {
+	display: inline-block;
+	width: 100%;
+	border-radius: .125rem;
+}
+
+.tags {
+	position: relative;
+}
+
+.entry-tile .unidentified-tag {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: .625rem;
+	padding: 1em;
+	border-radius: 2rem;
+	background-color: hsla(50, 100%, 100%, 1);
+	opacity: 1;
+
+	color: hsla(250, 0%, 25%, 1);
+}
+
+.entry-tile:hover .unidentified-tag {
+	z-index: 1;
+	color: hsla(250, 0%, 25%, 1);
+}
+
+.entry-tile:hover {
+	color: hsla(275, 100%, 50%, 1) !important;
+	cursor: pointer;
+
+	transform: translateY(-.5rem);
+	transition: transform .5s ease;
+}
+
+.entry-tile:hover h3::after {
+	margin-left: 1rem;
+	transition: .5s ease;
+	opacity: 1;
+}
+
+.entry-tile:hover img {
+	opacity: .75;
+	transition: .5s ease;
+}
+
+.entry-tile:hover button {
+	opacity: 1;
+	bottom: 5%;
+	transition: .5s ease;
+}
+
+.entry-tile button:hover {
+	background-color: hsla(360, 100%, 100%, 1);
+	color: hsla(150, 100%, 35%, 1);
+}
