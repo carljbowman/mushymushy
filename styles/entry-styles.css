@@ -138,7 +138,6 @@
 	width: 100%;
 	position: relative;
 	display: inline-flex;
-	align-items: flex-start;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -217,4 +216,69 @@ Cols Guide
 	min-height: 30rem;
 	max-height: 30vh;
 
+}
+
+/*---MEDIA QUEIES---*/
+
+
+@media screen and (max-width: 900px) {
+	.header {
+		height: 20vh;
+		min-height: 30rem;
+		background-color: hsla(250, 100%, 95%, 0)
+	}
+
+	.header .info {
+		width: 18rem;
+		margin: 0 auto;
+		background-color: hsla(0, 100%, 100%, 1);
+		border: none;
+	}
+
+	.header img {
+		position: absolute;
+		width: 100%;
+		z-index: -3;
+	}
+
+	.subject {
+		display: inline-block;
+		margin-bottom: 2rem;
+		border-top: none;
+	}
+
+	.info {
+		width: 100%;
+	  	margin-bottom: 4rem;
+	}
+
+	.content {
+		  position: relative;
+		  width: 100%;
+		  padding: 0;
+		  border-left: none;
+	  }
+
+	  .content .title h2 {
+		  font-size: 1.5rem;
+	  }
+
+	  .row {
+		  align-items: flex-start;
+	  }
+}
+
+
+@media screen and (max-width: 520px) {
+	.content .cols3 {
+		width: 100%;
+	}
+
+	.content .cols4 {
+		width: 100%;
+	}
+
+	.content .cols5 {
+		width: 100%;
+	}
 }
