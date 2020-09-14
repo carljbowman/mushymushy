@@ -17,7 +17,6 @@ class Footer extends HTMLElement {
                         that doesn't look right, or have general feedback?
                         Check out the
                         <a href="https://github.com/carljbowman/mushrooms" target=”_blank>GitHub repository</a>
-                        <b>[Releasing Soon]</b>
                         and file an issue with your feedback.
                     </p>
                 </div>
