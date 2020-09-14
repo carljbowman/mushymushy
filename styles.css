@@ -261,7 +261,6 @@ button:hover {
 	position: absolute;
 	left: 2.5%;
 	width: 95%;
-	min-height: 60vh;
 	border-radius: .125rem;
 	opacity: 0.85;
 	z-index: -1;
@@ -394,4 +393,67 @@ button:hover {
 .entry-tile button:hover {
 	background-color: hsla(360, 100%, 100%, 1);
 	color: hsla(150, 100%, 35%, 1);
+}
+
+/*---MEDIA QUEIES---*/
+
+@media screen and (max-width: 900px) {
+	.masthead {
+		min-height: 20rem;
+		height: 40vh;
+	}
+
+	.masthead .content {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		border: none;
+	}
+
+	.masthead .content h1 {
+		border: none;
+	}
+
+
+	.masthead .content p {
+		display: none;
+	}
+
+	.masthead video {
+		width: 100%;
+		left: 0;
+	}
+
+	.entry-tile {
+		width: 32%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.masthead {
+		height: inherit;
+		min-height: inherit;
+	}
+
+	.masthead video {
+		top: 0;
+	}
+
+	.entry-tile {
+		width: 49%;
+	}
+
+	.masthead .content h1 {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.entry-tile {
+		width: 100%;
+	}
+
+	.masthead .content h1 {
+		font-size: 1rem;
+	}
 }
