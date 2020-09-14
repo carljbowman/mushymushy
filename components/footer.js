@@ -10,7 +10,7 @@ class Footer extends HTMLElement {
                         </li>
                     </ol>
                 </div>
-                <div class="about">
+                <div class="feedback">
                     <h4>Feedback (?)</h4>
                     <p>
                         See a mushroom that has been misidentified, some information

@@ -108,6 +108,11 @@ a:hover {
 	transition: color .5s ease;
 }
 
+a:visited {
+	color: hsla(250, 100%, 70%, 1);
+	transition: color .5s ease;
+}
+
 p a::after {
 	content: "⭢";
 	margin-left: .5rem;
@@ -183,7 +188,7 @@ footer .site-links {
 	width: 15%;
 }
 
-footer .about {
+footer .feedback {
 	margin: 0 1%;
 	width: 30%;
 }
@@ -199,7 +204,7 @@ footer .site-links li {
 	font-size: .875rem;
 }
 
-footer .about p {
+footer .feedback p {
 	margin-top: .5rem;
 	font-size: .875rem;
 }
@@ -440,10 +445,6 @@ button:hover {
 		top: 0;
 	}
 
-	.entry-tile {
-		width: 49%;
-	}
-
 	.masthead .content {
 		width: fit-content;
 		margin: 0 auto;
@@ -452,6 +453,17 @@ button:hover {
 	.masthead .content h1 {
 		font-size: 1rem;
 		padding: 2rem 0;;
+	}
+
+	footer .site-links {
+		width: 45%;
+	}
+
+	footer .feedback {
+		width: 45%;
+	}
+	.entry-tile {
+		width: 49%;
 	}
 }
 
@@ -467,5 +479,19 @@ button:hover {
 	.masthead .content h1 {
 		font-size: 1rem;
 		width: inherit;
+	}
+
+	footer {
+		display: inline-block;
+	}
+
+	footer .site-links {
+		width: 95%;
+		margin: 0 auto 3rem;
+	}
+
+	footer .feedback {
+		width: 95%;
+		margin: 0 auto 1rem;
 	}
 }

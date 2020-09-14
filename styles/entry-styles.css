@@ -39,10 +39,6 @@
 	width: 50%;
 }
 
-.observations {
-	margin-bottom: 2rem;
-}
-
 .subject {
 	width: 100%;
 	position: relative;
@@ -224,7 +220,8 @@ Cols Guide
 	.header {
 		height: 20vh;
 		min-height: 30rem;
-		background-color: hsla(250, 100%, 95%, 0)
+		background-color: hsla(250, 100%, 95%, 0);
+		margin-bottom: 1rem;
 	}
 
 	.header .info {
@@ -242,13 +239,15 @@ Cols Guide
 
 	.subject {
 		display: inline-block;
-		margin-bottom: 2rem;
+		margin-top: 0;
+		margin-bottom: 3rem;
+		padding-top: 0;
 		border-top: none;
 	}
 
 	.info {
 		width: 100%;
-	  	margin-bottom: 4rem;
+	  	margin-bottom: 3rem;
 	}
 
 	.content {
@@ -264,6 +263,10 @@ Cols Guide
 
 	  .row {
 		  align-items: flex-start;
+	  }
+
+	  footer {
+		  margin-top: 1rem;
 	  }
 }
 
