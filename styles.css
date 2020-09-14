@@ -437,7 +437,6 @@ button:hover {
 
 	.masthead video {
 		position: absolute;
-		right: 0;
 		top: 0;
 	}
 
@@ -458,7 +457,7 @@ button:hover {
 
 @media screen and (max-width: 500px) {
 	.masthead video {
-		top: 0;
+		width: 32rem;
 	}
 
 	.entry-tile {
