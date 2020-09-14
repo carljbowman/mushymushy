@@ -431,11 +431,13 @@ button:hover {
 
 @media screen and (max-width: 700px) {
 	.masthead {
-		height: inherit;
 		min-height: inherit;
+		height: fit-content;
 	}
 
 	.masthead video {
+		position: absolute;
+		right: 0;
 		top: 0;
 	}
 
@@ -443,17 +445,28 @@ button:hover {
 		width: 49%;
 	}
 
+	.masthead .content {
+		width: fit-content;
+		margin: 0 auto;
+	}
+
 	.masthead .content h1 {
 		font-size: 1rem;
+		padding: 2rem 0;;
 	}
 }
 
 @media screen and (max-width: 500px) {
+	.masthead video {
+		top: 0;
+	}
+
 	.entry-tile {
 		width: 100%;
 	}
 
 	.masthead .content h1 {
 		font-size: 1rem;
+		width: inherit;
 	}
 }
