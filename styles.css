@@ -304,7 +304,7 @@ button:hover {
 	width: 24%;
 	margin: .5%;
 	transition: transform .5s ease;
-	margin-bottom: 1rem;
+	margin-bottom: 2.5rem;
 }
 
 .entry-tile button {
