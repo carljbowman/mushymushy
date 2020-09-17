@@ -39,6 +39,26 @@
 	width: 50%;
 }
 
+.callout.uncertain {
+	text-align: left;
+	background-color: hsla(250, 100%, 95%, .25);
+	border-color: hsla(250, 100%, 50%, .15);
+	color: hsla(250, 100%, 50%, .50);
+}
+
+.callout.uncertain .row {
+	margin: 0 auto;
+	width: 97%;
+}
+
+.callout.uncertain p {
+	width: 75%;
+}
+
+.callout.uncertain button {
+	padding: 1.5em 2em;
+}
+
 .subject {
 	width: 100%;
 	position: relative;
@@ -133,7 +153,7 @@
 .row {
 	width: 100%;
 	position: relative;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;

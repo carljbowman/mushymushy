@@ -210,16 +210,15 @@ footer .feedback p {
 }
 
 button {
-	background-color: hsla(150, 75%, 50%, 1);
+	background-color: hsla(250, 100%, 90%, 1);
 	border: none;
-	padding: 1em;
-	color: white;
+	padding: 1em 2em;
 	cursor: pointer;
-	border-radius: .125rem;
+	border-radius: .25rem;
 }
 
 button:hover {
-	background-color: hsla(150, 75%, 40%, 1);
+	background-color: hsla(250, 100%, 80%, 1);
 	transition: 1s ease;
 }
 
@@ -277,7 +276,7 @@ button:hover {
 	padding: 1.25rem 0;
 
 	line-height: 2em;
-	border-radius: .25rem;
+	border-radius: .5rem;
 
 	margin-bottom: 2rem;
 
@@ -352,7 +351,7 @@ button:hover {
 	position: relative;
 }
 
-.entry-tile .unidentified-tag {
+.entry-tile .tag {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -365,7 +364,7 @@ button:hover {
 	color: hsla(250, 0%, 25%, 1);
 }
 
-.entry-tile:hover .unidentified-tag {
+.entry-tile:hover .tag {
 	z-index: 1;
 	color: hsla(250, 0%, 25%, 1);
 }
