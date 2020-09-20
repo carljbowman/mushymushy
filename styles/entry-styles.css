@@ -159,6 +159,28 @@
 	flex-wrap: wrap;
 }
 
+.notes img {
+	width: 100%;
+}
+
+.notes .note {
+	position: absolute;
+	max-width: 90%;
+	background: hsla(0, 0%, 100%, 1);
+	padding: .75rem 2.5%;
+	left: 2.5%;
+	font-size: .875rem;
+	line-height: 1.25em;
+}
+
+.notes .note.top {
+	top: 1rem;
+}
+
+.notes .note.bottom {
+	bottom: 1rem;
+}
+
 /*
 Cols Guide
 -----------------------------------------------
@@ -179,31 +201,37 @@ Cols Guide
 .content .cols1 {
 	width: 15%;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .content .cols2 {
 	width: 32%;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .content .cols3 {
 	width: 49%;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .content .cols4 {
 	width: 64%;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .content .cols5 {
 	width: 79%;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .content .cols6 {
 	width: 100%;
 	margin-bottom: 2rem;
+	position: relative;
 }
 
 .content .img-container {
