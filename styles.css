@@ -339,7 +339,7 @@ button:hover {
 
 .entry-tile .latin {
 	display: inline-block;
-	padding: .5rem 0 1.5rem;
+	padding: .5rem 0 .75rem;
 	font-size: .75rem;
 	color: hsla(150, 100%, 35%, 1);
 }
