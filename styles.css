@@ -123,6 +123,21 @@ a.arrow::after {
 	margin-left: .5rem;
 }
 
+a.nor-east::after {
+	content: "↗";
+	margin-left: .5rem;
+}
+
+a.wiggle-right::after {
+	content: "↝";
+	margin-left: .5rem;
+}
+
+a.wiggle-left::after {
+	content: "↜";
+	margin-left: .5rem;
+}
+
 button {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: .75rem;
