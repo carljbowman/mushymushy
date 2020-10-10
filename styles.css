@@ -435,11 +435,11 @@ button:hover {
 	margin: 1rem auto 0;
 	font-size: 1rem;
 	color: hsla(250, 100%, 100%, 1);
-	background-color: hsla(250, 100%, 75%, 1);
+	background-color: hsla(250, 100%, 50%, 1);
 }
 
 #load-more:hover {
-	background-color: hsla(250, 100%, 50%, 1);
+	background-color: hsla(250, 100%, 35%, 1);
 	color: hsla(250, 100%, 100%, 1);
 }
 
