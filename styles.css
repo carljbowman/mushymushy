@@ -368,13 +368,13 @@ button:hover {
 	width: 100%;
 	border-radius: .125rem;
 	background-color: hsla(250, 100%, 90%, 1);
-	animation: image-load 3s infinite;
+	animation: image-load 2s infinite;
 }
 
 @keyframes image-load {
-	0% {background-color: hsla(250, 100%, 95%, .75);}
-	50% {background-color: hsla(250, 100%, 95%, 0);}
-	100% {background-color: hsla(250, 100%, 95%, .75);}
+	0% {background-color: hsla(250, 100%, 95%, .85);}
+	50% {background-color: hsla(250, 100%, 95%, .25);}
+	100% {background-color: hsla(250, 100%, 95%, .85);}
 }
 
 .tags {
