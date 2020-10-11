@@ -171,8 +171,12 @@ nav .nav-element {
 }
 
 nav .logo {
-	text-transform: lowercase;
-	color: hsla(250, 0%, 25%, 1);
+	width: 1.5rem;
+	margin-left: 2.5%;
+	background-image: url("designs/mushy-muhsy-logo.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
 }
 
 nav a {
@@ -180,7 +184,7 @@ nav a {
 }
 
 nav a.nav-element:hover {
-	background-color: hsla(150, 100%, 0%, .075);
+	background-color: hsla(250, 100%, 50%, .075);
 }
 
 nav .mushroom-name {
