@@ -268,13 +268,16 @@ Cols Guide
 	.header {
 		height: 20vh;
 		min-height: 30rem;
-		background-color: hsla(250, 100%, 95%, 0);
+		/* background-color: hsla(250, 100%, 95%, 0); */
 		margin-bottom: 1rem;
 	}
 
 	.header .info {
 		width: 18rem;
 		margin: 0 auto;
+	}
+
+	.header .info.white-bg{
 		background-color: hsla(0, 100%, 100%, 1);
 		border: none;
 	}
