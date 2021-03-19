@@ -13,9 +13,9 @@ class Footer extends HTMLElement {
                 <div class="feedback">
                     <h4>Feedback (?)</h4>
                     <p>
-                        See a mushroom that has been misidentified, some information
-                        that doesn't look right, or have general feedback?
-                        Check out the
+                        See a mushroom that has been misidentified, notice some
+                        information that doesn't look right, or have general feedback?
+                        Visit out the
                         <a href="https://github.com/carljbowman/mushrooms" target=”_blank>GitHub repository</a>
                         and file an issue with your feedback.
                     </p>
