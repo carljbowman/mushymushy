@@ -279,13 +279,14 @@ Cols Guide
 
 	.header .info.white-bg{
 		background-color: hsla(0, 100%, 100%, 1);
+		mix-blend-mode: screen;
 		border: none;
+		z-index: 3;
 	}
 
 	.header img {
 		position: absolute;
 		width: 100%;
-		z-index: -3;
 	}
 
 	.subject {
