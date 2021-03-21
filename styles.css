@@ -50,11 +50,69 @@ table {
 /*---End of CSS Reset---*/
 
 /*---GLOBAL STYLES---*/
-html {
+:root {
+	--logo-light: url("designs/mushy-muhsy-logo-light.svg");
+	--logo-dark: url("designs/mushy-muhsy-logo-dark.svg");
+
+	--white: hsla(0, 100%, 100%, 1);
+	--white-op10: hsla(0, 100%, 100%, .10);
+	--white-op25: hsla(0, 100%, 100%, .25);
+	--white-op50: hsla(0, 100%, 100%, .5);
+	--gray25: hsla(0, 0%, 25%, 1);
+	--gray25-op25: hsla(0, 0%, 25%, .25);
+	--gray-op50: hsla(0, 0%, 0%, .5);
+	--gray20: hsla(0, 0%, 10%, 20);
+	--blue50: hsla(250, 100%, 50%, 1);
+	--blue50-op025: hsla(250, 100%, 50%, .025);
+	--blue70: hsla(250, 100%, 70%, 1);
+	--orage60: hsla(30, 100%, 60%, 1);
+	--teal35: hsla(150, 100%, 35%, 1);
+
+}
+
+.light-theme {
+	--logo: var(--logo-light);
+	--primary-bg: var(--white);
+	--secondary-bg: var(--blue50-op025);
+
+	--border: var(--gray25-op25);
+
+	--text: var(--gray25);
+	--text-light: var(--gray-op50);
+	--text-white: var(--white);
+	--text-latin: var(--gray-op50);
+	--link: var(--blue70);
+	--link-alt: var(--blue50);
+
+	--button: var(--blue70);
+	--button-alt: var(--blue50);
+	--button-shadow: var(--blue50-op025);
+}
+
+.dark-theme {
+	--logo: var(--logo-dark);
+	--primary-bg: var(--gray20);
+	--secondary-bg: var(--white-op10);
+
+	--border: var(--white-op50);
+
+	--text: var(--white);
+	--text-light: var(--white-op50);
+	--text-white: var(--white);
+	--text-latin: var(--white-op50);
+	--link: var(--blue70);
+	--link-alt: var(--blue50);
+
+	--button: var(--blue70);
+	--button-alt: var(--blue50);
+	--button-shadow: var(--blue50-op025);
+}
+
+body {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 16px;
-	color: hsla(250, 0%, 25%, 1);
-	background-color: hsla(150, 100%, 100%, 1);
+	color: var(--text);
+	background-color: var(--primary-bg);
 }
 
 .page {
@@ -99,17 +157,17 @@ b {
 }
 
 a {
-	color: hsla(250, 100%, 70%, 1);
+	color: var(--link);
 	text-decoration: none;
 }
 
 a:hover {
-	color: hsla(250, 100%, 50%, 1);
+	color: var(--link-alt);
 	transition: color .5s ease;
 }
 
 a:visited {
-	color: hsla(250, 100%, 70%, 1);
+	color: var(--link);
 	transition: color .5s ease;
 }
 
@@ -146,7 +204,7 @@ button {
 
 .latin {
 	font-style: italic;
-	color: hsla(0, 0%, 0%, .5);
+	color: var(--gray-op50);
 }
 
 /*---ELEMENT STYLES---*/
@@ -155,7 +213,7 @@ nav {
 	display: inline-flex;
 	width: 100%;
 	height: 4rem;
-	background-color: hsla(250, 100%, 100%, 1);
+	background-color: var(--primary-bg);
 
 	position: fixed;
 	top: 0;
@@ -173,7 +231,7 @@ nav .nav-element {
 nav .logo {
 	width: 1.5rem;
 	margin-left: 2.5%;
-	background-image: url("designs/mushy-muhsy-logo.svg");
+	background-image: var(--logo);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 60%;
@@ -184,11 +242,12 @@ nav a {
 }
 
 nav a.nav-element:hover {
-	background-color: hsla(250, 100%, 50%, .075);
+	background-color: var(--secondary-bg);
 }
 
 nav .mushroom-name {
-	border-left: 1px solid hsla(150, 0%, 85%, 1);
+	border-left: 1px solid;
+	border-left-color: var(--border);
 }
 
 footer {
@@ -196,10 +255,10 @@ footer {
 	align-content: flex-start;
 	width: 100%;
 
-	background-color: hsla(250, 100%, 95%, .25);
+	background-color: var(--secondary-bg);
 	margin-top: 6rem;
 	padding: 4rem 0;
-	color: hsla(250, 0%, 40%, 1);
+	color: var(--text-light);
 }
 
 footer .site-links {
@@ -214,12 +273,12 @@ footer .feedback {
 
 footer h4 {
 	padding: 0 0 1rem 0;
-	border-bottom: 1px solid hsla(150, 100%, 0%, .25)
+	border-bottom: 1px solid var(--border);
 }
 
 footer .site-links li {
 	padding: 1rem 0;
-	border-bottom: 1px solid hsla(150, 100%, 0%, .25);
+	border-bottom: 1px solid var(--border);
 	font-size: .875rem;
 }
 
@@ -229,17 +288,17 @@ footer .feedback p {
 }
 
 button {
-	background-color: hsla(250, 100%, 100%, 1);
-	border: 1px solid hsla(250, 100%, 90%, 1);
+	background-color: var(--button);
+	border: none;
 	padding: 1em 2em;
 	cursor: pointer;
 	border-radius: .25rem;
-	color: hsla(250, 100%, 60%, 1);
+	color: var(--link);
 	transition: 1s ease;
 }
 
 button:hover {
-	box-shadow: 0 0 0 .25rem hsla(250, 100%, 90%, 1);
+	box-shadow: 0 0 0 .25rem var(--button-shadow);
 	transition: 1s ease;
 }
 
@@ -250,7 +309,6 @@ button:hover {
 	height: 60vh;
 	margin: 4rem 0 3rem; /*NAV OFFSET */
 
-	/* background-color: hsla(150, 100%, 95%, 1); */
 	display: inline-flex;
 	align-items: center;
 
@@ -260,7 +318,7 @@ button:hover {
 
 .masthead .content {
  	max-width: 40rem;
-	border: 1px solid hsla(150, 0%, 100%, 1);
+	border: 1px solid var(--white);
 	margin-left: 5%;
 }
 
@@ -269,9 +327,9 @@ button:hover {
 	font-weight: 400;
 	line-height: 3em;
 	text-transform: uppercase;
-	border-bottom: 1px solid hsla(150, 0%, 100%, 1);
+	border-bottom: 1px solid var(--white);
 	padding: 2rem 3rem;
-	color: white;
+	color: var(--text-white);
 
 	letter-spacing: 1.5em;
 }
@@ -279,7 +337,8 @@ button:hover {
 .masthead p {
 	font-size: .875rem;
 	padding: 1rem 2rem;
-	background-color: white;
+	background-color: var(--white);
+	color: var(--gray25);
 }
 
 .masthead video {
@@ -301,8 +360,8 @@ button:hover {
 
 	margin-bottom: 2rem;
 
-	color: hsla(30, 100%, 60%, .75);
-	border: 1px solid hsla(30, 100%, 60%, .5);
+	color: var(--orage60);
+	border: 1px solid var(--orage60);
 }
 
 .callout p {
@@ -315,7 +374,7 @@ button:hover {
 	display: inline-flex;
 	align-items: baseline;
 	flex-wrap: wrap;
-	background-color: white;
+	background-color: var(--primary-bg);
 	padding: 2rem;
 }
 
@@ -338,8 +397,8 @@ button:hover {
 	transform: translate(-50%, -50%);
 	width: 50%;
 
-	background-color: hsla(360, 100%, 100%, .75);
-	color: hsla(250, 0%, 25%, 1);
+	background-color: var(--white-op50);
+	color: var(--text);
 	border: none;
 
 	opacity: 0;
@@ -349,8 +408,8 @@ button:hover {
 	display: inline-block;
 	width: 100%;
 	padding-bottom:.25rem;
-	border-bottom: 1px solid hsla(360, 100%, 0%, 0.125);
-	color: hsla(250, 0%, 25%, 1)
+	border-bottom: 1px solid var(--border);
+	color: var(--text)
 }
 
 .entry-tile h3::after {
@@ -364,14 +423,14 @@ button:hover {
 	display: inline-block;
 	padding: .5rem 0 .75rem;
 	font-size: .75rem;
-	color: hsla(150, 100%, 35%, 1);
+	color: var(--teal35);
 }
 
 .entry-tile img {
 	display: inline-block;
 	width: 100%;
 	border-radius: .125rem;
-	background-color: hsla(250, 100%, 90%, 1);
+	background-color: var(--secondary-bg);
 	animation: image-load 2s infinite;
 }
 
@@ -392,19 +451,19 @@ button:hover {
 	font-size: .625rem;
 	padding: 1em;
 	border-radius: 2rem;
-	background-color: hsla(50, 100%, 100%, 1);
+	background-color: var(--primary-bg);
 	opacity: 1;
 
-	color: hsla(250, 0%, 25%, 1);
+	color: var(--text);
 }
 
 .entry-tile:hover .tag {
 	z-index: 1;
-	color: hsla(250, 0%, 25%, 1);
+	color: var(--text);
 }
 
 .entry-tile:hover {
-	color: hsla(275, 100%, 50%, 1) !important;
+	color: var(--text) !important;
 	cursor: pointer;
 
 	transform: translateY(-.5rem);
@@ -429,27 +488,27 @@ button:hover {
 }
 
 .entry-tile button:hover {
-	background-color: hsla(360, 100%, 100%, 1);
-	color: hsla(150, 100%, 35%, 1);
-	box-shadow: 0 0 0 .25rem hsla(250, 100%, 100%, .25);
+	background-color: var(--white);
+	color: var(--teal35);
+	box-shadow: 0 0 0 .25rem var(--white-op25);
 }
 
 #load-more {
 	width: 100%;
 	margin: 1rem auto 0;
 	font-size: 1rem;
-	color: hsla(250, 100%, 100%, 1);
-	background-color: hsla(250, 100%, 50%, 1);
+	color: var(--white);
+	background-color: var(--link);
 }
 
 #load-more:hover {
-	background-color: hsla(250, 100%, 35%, 1);
-	color: hsla(250, 100%, 100%, 1);
+	background-color: var(--link-alt);
+	color: var(--white);
 }
 
 #load-more:active {
-	background-color: hsla(250, 100%, 70%, 1);
-	color: hsla(250, 100%, 100%, 1);
+	background-color: var(--link);
+	color: var(--white);
 }
 
 #load-more:focus {

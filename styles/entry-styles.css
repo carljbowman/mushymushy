@@ -4,7 +4,7 @@
 	height: 75vh;
 	min-height: 40rem;
 	margin: 4rem 0 4rem 0; /*Margin Top = NAV OFFSET*/
-	background-color: hsla(250, 100%, 95%, .25);
+	background-color: var(--secondary-bg);
 
 	display: inline-flex;
 	justify-content: space-between;
@@ -15,7 +15,7 @@
 
 .header .info {
 	width: 20%;
-	border: 1px solid hsla(150, 100%, 0%, .25);
+	border: 1px solid var(--border);
 	padding: 2rem;
 	border-radius: .125rem;
 	margin-left: 12.5%;
@@ -26,13 +26,14 @@
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
 
-	border-bottom: 1px solid hsla(150, 100%, 0%, .25);
+	border-bottom: 1px solid var(--border);
 }
 
 .header .latin {
 	font-size: 2rem;
 	font-weight: 100;
 	line-height: 1.5em;
+	color: var(--text-latin);
 }
 
 .header img {
@@ -41,9 +42,9 @@
 
 .callout.uncertain {
 	text-align: left;
-	background-color: hsla(250, 100%, 95%, .25);
-	border-color: hsla(250, 100%, 50%, .15);
-	color: hsla(250, 100%, 50%, .50);
+	background-color: var(--secondary-bg);
+	border-color: var(--secondary-bg);
+	color: var(--blue70);
 }
 
 .callout.uncertain .row {
@@ -57,6 +58,7 @@
 
 .callout.uncertain button {
 	padding: 1.5em 2em;
+	color: var(--white)
 }
 
 .subject {
@@ -67,7 +69,7 @@
 	justify-content: space-between;
 	margin-top: 2rem;
 	padding-top: 2rem;
-	border-top: 1px solid hsla(150, 0%, 85%, 1);
+	border-top: 1px solid var(--border);
 }
 
 .subject:first-child {
@@ -87,20 +89,20 @@
 
 .info td {
 	padding: 1rem;
-	border-bottom: 1px solid hsla(150, 0%, 85%, 1);
+	border-bottom: 1px solid var(--border);
 }
 
 .info th {
 	text-align: left;
 	width: 20%;
 	padding: 1rem;
-	border-bottom: 1px solid hsla(150, 0%, 85%, 1);
+	border-bottom: 1px solid var(--border);
 }
 
 .content {
 	width: 70%;
 	padding-left: 5%;
-	border-left: 1px solid hsla(150, 0%, 85%, 1);
+	border-left: 1px solid var(--border);
 }
 
 .content img {
@@ -117,7 +119,7 @@
 
 .title {
 	width: 100%;
-	border-bottom: 1px solid hsla(150, 0%, 85%, 1);
+	border-bottom: 1px solid var(--border);
 	margin: 1rem 0 3rem;
 	padding-bottom: 1.75rem;
 }
@@ -142,12 +144,12 @@
 	border: none;
 	text-align: left;
 	padding-left: 1rem;
-	border-left: 1px solid hsla(150, 0%, 85%, 1);
+	border-left: 1px solid var(--border);
 }
 
 .observation-info td {
 	padding-left: 1rem;
-	border-left: 1px solid hsla(150, 0%, 85%, 1);
+	border-left: 1px solid var(--border);
 }
 
 .row {
@@ -166,7 +168,7 @@
 .notes .note {
 	position: absolute;
 	max-width: 90%;
-	background: hsla(0, 0%, 100%, 1);
+	background: var(--primary-bg);
 	padding: .75rem 2.5%;
 	left: 2.5%;
 	font-size: .875rem;
@@ -236,7 +238,6 @@ Cols Guide
 
 .content .img-container {
 	border-radius: .125rem;
-	/* background-color: hsla(250, 100%, 95%, .25); */
 
 	position: relative;
 	display: inline-flex;
@@ -268,7 +269,6 @@ Cols Guide
 	.header {
 		height: 20vh;
 		min-height: 30rem;
-		/* background-color: hsla(250, 100%, 95%, 0); */
 		margin-bottom: 1rem;
 	}
 
@@ -278,7 +278,7 @@ Cols Guide
 	}
 
 	.header .info.white-bg{
-		background-color: hsla(0, 100%, 100%, 1);
+		background-color: var(--primary-bg);
 		mix-blend-mode: screen;
 		border: none;
 		z-index: 3;
