@@ -231,7 +231,7 @@ nav .nav-element {
 nav .logo {
 	width: 1.5rem;
 	margin-left: 2.5%;
-	background-image: var(--logo);
+	background-image: url("designs/mushy-muhsy-logo-light.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 60%;
