@@ -40,23 +40,23 @@
 	width: 50%;
 }
 
-.callout.uncertain {
+.callout.unknown {
 	text-align: left;
 	background-color: var(--secondary-bg);
 	border-color: var(--secondary-bg);
 	color: var(--blue70);
 }
 
-.callout.uncertain .row {
+.callout.unknown .row {
 	margin: 0 auto;
 	width: 97%;
 }
 
-.callout.uncertain p {
+.callout.unknown p {
 	width: 75%;
 }
 
-.callout.uncertain button {
+.callout.unknown button {
 	padding: 1.5em 2em;
 	color: var(--white)
 }

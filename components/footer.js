@@ -15,7 +15,7 @@ class Footer extends HTMLElement {
                     <p>
                         See a mushroom that has been misidentified, notice some
                         information that doesn't look right, or have general feedback?
-                        Visit out the
+                        Visit the
                         <a href="https://github.com/carljbowman/mushrooms" target=”_blank>GitHub repository</a>
                         and file an issue with your feedback.
                     </p>

@@ -1,0 +1,20 @@
+.header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 4rem;
+    min-height: 20rem;
+}
+
+.header .intro {
+    margin: auto;
+    width: 87.5%;
+    padding: 3rem;
+    border: 1px solid var(--border);
+}
+
+.header .intro h2 {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
