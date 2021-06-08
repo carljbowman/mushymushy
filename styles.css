@@ -380,8 +380,7 @@ button:hover {
 
 .masthead video {
 	position: absolute;
-	left: 2.5%;
-	width: 95%;
+	width:100%;
 	border-radius: .125rem;
 	opacity: 0.85;
 	z-index: -1;
