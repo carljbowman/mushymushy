@@ -8,6 +8,9 @@ class Footer extends HTMLElement {
                         <li>
                             <a class="arrow" href="../index.html">Home</a>
                         </li>
+                        <li>
+                            <a class="arrow" href="../unidentified.html">Unidentified</a>
+                        </li>
                     </ol>
                 </div>
                 <div class="feedback">
