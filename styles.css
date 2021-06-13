@@ -395,15 +395,22 @@ button:hover {
 	border-radius: .5rem;
 
 	margin-bottom: 2rem;
-
-	color: var(--orage60);
-	border: 1px solid var(--orage60);
+	border: 1px solid var(--border);
 }
 
 .callout p {
 	display: inline-block;
 	width: 90%;
 	font-size: .875rem;
+}
+
+.callout.orange {
+	color: var(--orage60);
+	border: 1px solid var(--orage60);
+}
+
+.callout.orang .latin {
+	color: var(--orage60);
 }
 
 .entries {
