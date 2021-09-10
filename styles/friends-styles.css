@@ -1,0 +1,184 @@
+body {
+    background-color: var(--teal35-op10);
+}
+
+.header {
+    display: inline-flex;
+    position: fixed;
+    width: 40%;
+    max-width: 500px;
+    padding-top: 4rem;
+    min-height: 20rem;
+    z-index: -5;
+}
+
+.header .intro {
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.header .intro h2 {
+    font-size: 6rem;
+    font-weight: 100;
+    font-family: 'DM Serif Display', 'IBM Plex Mono', monospace;
+    color: var(--forest35);
+    margin-bottom: 2rem;
+}
+
+.header .intro h3 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro .friends-drawing {
+    display: block;
+    font-size: .875rem;
+    letter-spacing: -.2em;
+    line-height: 1.5em;
+    white-space: pre;
+    padding-bottom: 2rem;
+}
+
+.entries {
+    background-color: transparent;
+    display: inline-flex;
+    width: 50%;
+    margin-top: 6rem;
+    margin-left: 42.5%;
+}
+
+.entry-tile {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-grid;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    border-left: 1px solid var(--border);
+}
+
+.entry-tile .submitter {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.entry-tile .initials-container {
+    border: 1px solid var(--forest35);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.entry-tile .initials {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    display: inline-flex;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--forest35);
+}
+
+.entry-tile .name {
+    font-family: 'DM Serif Display', 'IBM Plex Mono', monospace;
+    font-size: 1.25rem;
+    margin-right: 3rem;
+}
+
+.entry-tile .date {
+    font-size: .875rem;
+}
+
+.entry-tile .latin {
+    margin-bottom: 1rem;
+}
+
+.entry-tile h3 {
+    border-bottom: none;
+}
+
+.entry-tile .quote {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--forest35);
+}
+
+.entry-tile img {
+    margin-bottom: 1rem;
+}
+
+.entry-tile:hover {
+	color: var(--text) !important;
+	cursor: default;
+
+	transform: none;
+	transition: none;
+}
+
+.entry-tile:hover h3::after {
+	margin-left: 1rem;
+	opacity: 0;
+}
+
+.entry-tile:hover img {
+	opacity: 1;
+}
+
+footer {
+    background-color: var(--white);
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        position: relative;
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    .header .intro {
+        padding: 4rem 0;
+    }
+
+    .header .intro h2 {
+        font-size: 6rem;
+    }
+
+    .header .intro p {
+        max-width: 600px;
+    }
+
+    .entries {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0;
+
+    }
+
+    .entry-tile {
+        padding-left: 0;
+        border-left: none;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    .header .intro h2 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	nav .items {
+		display: none;
+	}
+}

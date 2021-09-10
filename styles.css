@@ -51,8 +51,8 @@ table {
 
 /*---GLOBAL STYLES---*/
 :root {
-	--logo-light: url("designs/mushy-muhsy-logo-light.svg");
-	--logo-dark: url("designs/mushy-muhsy-logo-dark.svg");
+	--logo-light: url("designs/mushy-mushy-logo-light.svg");
+	--logo-dark: url("designs/mushy-mushy-logo-dark.svg");
 
 	--white: hsla(0, 100%, 100%, 1);
 	--white-op10: hsla(0, 100%, 100%, .10);
@@ -67,6 +67,8 @@ table {
 	--blue70: hsla(250, 100%, 70%, 1);
 	--orage60: hsla(30, 100%, 60%, 1);
 	--teal35: hsla(150, 100%, 35%, 1);
+	--forest35: hsla(150, 50%, 35%, 1);
+	--teal35-op10: hsla(150, 100%, 35%, .1);
 }
 
 .light-theme {
@@ -242,13 +244,14 @@ nav .nav-element {
 nav .logo {
 	width: 2.5rem;
 	margin-left: 2.5%;
-	background-image: url("designs/mushy-muhsy-logo-light.svg");
+	background-image: url("designs/mushy-mushy-logo-light.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 60%;
 }
 
 nav .items {
+	display: inline-flex;
 	position: fixed;
 	right: 2.5%;
 }
@@ -258,7 +261,7 @@ nav .nav-element {
 }
 
 nav li a{
-	font-size: .75rem;
+	font-size: .875rem;
 	color: var(--text);
 	cursor: pointer;
 }
