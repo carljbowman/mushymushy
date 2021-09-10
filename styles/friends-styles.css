@@ -181,4 +181,13 @@ footer {
 	nav .items {
 		display: none;
 	}
+
+    .entry-tile .submitter {
+        align-items: center;
+    }
+
+    .entry-tile .date {
+        text-align: right;
+        line-height: 1.5rem;
+    }
 }
