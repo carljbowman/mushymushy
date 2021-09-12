@@ -110,6 +110,19 @@ body {
     color: var(--forest35);
 }
 
+.entry-tile .choice {
+    position: absolute;
+    font-family: 'DM Serif Display', 'IBM Plex Mono', monospace;
+    color: white;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    background-color: var(--teal35);
+    right: 1rem;
+    margin-top: -1rem;
+    transform: rotate(10deg);
+    border-radius: 2px;
+}
+
 .entry-tile img {
     margin-bottom: 1rem;
 }
