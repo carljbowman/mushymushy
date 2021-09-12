@@ -115,7 +115,7 @@ body {
     font-family: 'DM Serif Display', 'IBM Plex Mono', monospace;
     color: white;
     font-size: 1.25rem;
-    padding: 1.25rem;
+    padding: 1.25em;
     background-color: var(--teal35);
     right: 1rem;
     margin-top: -1rem;
@@ -202,5 +202,9 @@ footer {
     .entry-tile .date {
         text-align: right;
         line-height: 1.5rem;
+    }
+
+    .entry-tile .choice {
+        font-size: .875rem
     }
 }
