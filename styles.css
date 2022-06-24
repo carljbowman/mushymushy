@@ -385,7 +385,6 @@ button:hover {
 	position: absolute;
 	width:100%;
 	border-radius: .125rem;
-	opacity: 0.85;
 	z-index: -1;
 }
 
