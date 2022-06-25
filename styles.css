@@ -234,6 +234,12 @@ nav {
 	box-shadow: 0 .25rem 0 0 var(--white-op25);
 }
 
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
 nav .nav-element {
 	display: inline-flex;
 	height: 4rem;
@@ -347,7 +353,7 @@ button:hover {
 	width: 100%;
 	min-height: 30rem;
 	height: 60vh;
-	margin: 4rem 0 3rem; /*NAV OFFSET */
+	margin: 0 0 3rem; /*NAV OFFSET */
 
 	display: inline-flex;
 	align-items: center;
