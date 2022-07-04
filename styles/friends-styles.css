@@ -111,6 +111,12 @@ body {
     margin-bottom: 2rem;
 }
 
+.entry-tile .callout {
+    color: var(--forest35);
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+}
+
 .entry-tile .choice {
     position: absolute;
     font-family: 'DM Serif Display', 'IBM Plex Mono', monospace;

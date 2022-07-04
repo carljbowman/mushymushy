@@ -421,6 +421,28 @@ button:hover {
 	color: var(--orage60);
 }
 
+.special {
+	animation: colorRotate 2s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: hsla(0, 100%, 50%, 1);
+  }
+  25% {
+    color: hsla(63, 100%, 50%, 1);
+  }
+  50% {
+    color: hsla(139, 100%, 50%, 1);
+  }
+  75% {
+    color: hsla(215, 100%, 50%, 1);
+  }
+  100% {
+    color: hsla(292, 100%, 50%, 1);
+  }
+}
+
 .entries {
 	display: inline-flex;
 	align-items: baseline;
