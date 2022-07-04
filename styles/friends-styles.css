@@ -108,6 +108,7 @@ body {
     font-size: 1.5rem;
     font-weight: 200;
     color: var(--forest35);
+    margin-bottom: 2rem;
 }
 
 .entry-tile .choice {
